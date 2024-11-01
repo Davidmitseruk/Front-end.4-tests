@@ -19,24 +19,37 @@
 //  console.log('event.currentTarget: ', event.currentTarget);
 //})
 
-const parent = document.querySelector('#parent');
-const child = document.querySelector('#child');
-const des = document.querySelector('#des');
+// const parent = document.querySelector('#parent');
+// const child = document.querySelector('#child');
+// const des = document.querySelector('#des');
 
-parent.addEventListener('click', () => {
-    alert('Parent clicked!');
-})
+// parent.addEventListener('click', () => {
+//     alert('Parent clicked!');
+// })
 
-child.addEventListener('click', () => {
-    alert('Child clicked!');
-})
+// child.addEventListener('click', () => {
+//     alert('Child clicked!');
+// })
 
-des.addEventListener('click', (event) => {
-    event.stopPropagation();
-    alert('Des clicked!')
-})
+// des.addEventListener('click', (event) => {
+//     event.stopPropagation();
+//     alert('Des clicked!')
+// })
 
-const box = document.querySelector('div.box')
-box.addEventListener('click', function(event){
-    console.log(event.target);
-})
+// const box = document.querySelector('div.box')
+// box.addEventListener('click', function(event){
+ //    console.log(event.target);
+// })
+
+//const input = document.querySelector('#input')
+//input.addEventListener('text',_-throttle(() =))
+
+function candleinput(){
+    const text = event.target.value;
+    console.log('Send to Server:', text)
+    
+};
+const throttleInput = _.throttle(candleinput, 500);
+const input = document.querySelector('#input');
+input.addEventListener('input', throttleInput)
+
