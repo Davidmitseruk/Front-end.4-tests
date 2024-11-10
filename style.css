@@ -28,3 +28,7 @@
     padding: 8px;
     border: 1px solid black;
 }
+
+#point{
+    transition: cx 0.1s, cy 0.1s;
+}

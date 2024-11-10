@@ -44,12 +44,31 @@
 //const input = document.querySelector('#input')
 //input.addEventListener('text',_-throttle(() =))
 
-function candleinput(){
-    const text = event.target.value;
-    console.log('Send to Server:', text)
-    
-};
-const throttleInput = _.throttle(candleinput, 500);
-const input = document.querySelector('#input');
-input.addEventListener('input', throttleInput)
+//function candleinput(){
+//   const text = event.target.value;
+ //   console.log('Send to Server:', text)
+ //   
+//};
+//const throttleInput = _.throttle(candleinput, 500);
+//const input = document.querySelector('#input');
+//input.addEventListener('input', throttleInput)
+
+//function updateCoordinats (event){
+ //   const graph = document.getElementById('graph');
+ //   const point = document.getElementById('point');
+ //   const coord = document.getElementById('coord');
+
+ //   const rect = graph.getBoundingClientRect();
+ //   const x = event.clientX - rect.left;
+ //   const y = event.clientY - rect.top;
+
+  // point.setAttribute('cx', x)
+  //  point.setAttribute('cy', y)
+
+  //  coord.textContent = `X: ${x.toFixed(0)}, Y: ${y.toFixed(0)}`;
+//};
+
+//const throttleUpdate = _.throttle(updateCoordinats, 50);
+//const graphElement = document.getElementById('graph');
+//graphElement.addEventListener('mousemove', throttleUpdate)
 
