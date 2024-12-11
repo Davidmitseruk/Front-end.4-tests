@@ -72,21 +72,23 @@
 //const graphElement = document.getElementById('graph');
 //graphElement.addEventListener('mousemove', throttleUpdate)
 
-const options = {
-  root: null,
-  rootMargin: '0px',
-  thresHold: 0.1,
+//const options = {
+//  root: null,
+//  rootMargin: '0px',
+ // thresHold: 0.1,
 
-}
-const observer = new IntersectionObserver((entries, observer)=> {
-   entries.forEach(entry => {
-    if (entry.isIntersecting){
-      const img =entry.target;
+//}
+//const observer = new IntersectionObserver((entries, observer)=> {
+//   entries.forEach(entry => {
+//    if (entry.isIntersecting){
+//      const img = entry.target;
       img.src = img.dataset.src;
-      observer.unobserve();
-    }
-   })
-}, options);
-document.querySelectorAll('.lazy-image').forEach(img => {
-  observer.observe(img),
-})
+//      observer.unobserve();
+//    }
+//   })
+//}, options);
+
+//document.querySelectorAll('.lazy-image').forEach(img => {
+//  observer.observe(img)}
+//  ,
+//)
